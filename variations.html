@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variations</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+		<script src="scripts/snap.svg.js"></script>
+		<script src="scripts/main.js" type="text/javascript"></script>
+		<script src="scripts/chroma.js"></script>
+		<script src="scripts/svg_todataurl.js"></script>
+    </head>
+    <body>
+	
+	
+        <div id="header">
+            <span>This is a variations generator</span>
+            <ul id="menu">
+                <li>VARIATIONS</li>
+				<li>SETTINGS</li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>Generate Variations</h2>
+            <h3>Settings</h3>
+			<table>
+				<tr>
+					<td>junctions</td>
+					<td>seed</td>
+					<td>randomnes</td>
+					<td></td>
+					<td>columns</td>
+					<td>rows</td>
+					<td>gap</td>
+				</tr>
+				<tr>
+					<td><input type="number" id="junctions" name="junctions" value="4" /></td>
+					<td><input type="number" id="seed" name="seed" value="8191"/></td>
+					<td><input type="number" id="randomnes" name="randomnes" value="12" /></td>
+					<td></td>
+					<td><input type="number" id="columns" name="columns" value="8" /></td>
+					<td><input type="number" id="rows" name="rows" value="8" /></td>
+					<td><input type="number" id="gap" name="gap" value="2" /></td>
+				</tr>
+				<tr>
+					<td>bgColor</td>
+					<td>paintColor</td>
+					<td>gridColor</td>
+					<td>colorFun</td>
+				</tr>
+				<tr>
+					<td><input type="color" id="bgColor" name="bgColor" value="#000000"/></td>
+					<td><input type="color" id="paintColor" name="paintColor" value="#b3ff00"/></td>
+					<td><input type="color" id="gridColor" name="gridColor" value="#ff00a6"/></td>
+					<td><input type="checkbox" id="colorFun" name="colorFun" /></td>
+				</tr>
+				<tr>
+					<td>lineWidth</td>
+					<td></td>
+					<td>strokeWidth</td>
+					<td>blurFactor</td>
+					<td></td>
+					<td>junctionsVisible</td>
+					<td>junctionSize</td>
+				</tr>
+				<tr>
+					<td><input type="number" id="lineWidth" name="lineWidth" value="2" /></td>
+					<td></td>
+					<td><input type="number" id="strokeWidth" name="strokeWidth" value="4" /></td>
+					<td><input type="number" id="blurFactor" name="blurFactor" value="5" /></td>
+					<td></td>
+					<td><input type="checkbox" id="junctionsVisible" name="junctionsVisible" /></td>
+					<td><input type="number" id="junctionSize" name="junctionSize" value="3" /></td>
+				
+				</tr>
+				
+				<tr>
+					<td>curves</td>
+					<td></td>
+					<td>stroke</td>
+					<td>blur</td>
+					<td>outline</td>
+					<td>race</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id="curves" name="curves" checked="checked"/></td>
+					<td></td>
+					<td><input type="checkbox" id="stroke" name="stroke" /></td>
+					<td><input type="checkbox" id="blur" name="blur" /></td>
+					<td><input type="checkbox" id="outline" name="outline" checked="checked"/></td>
+					<td><input type="checkbox" id="race" name="race" /></td>
+					<td><button onclick="bindValues()">generate</button></td>
+				</td>
+				
+				
+			</table>
+			
+			<img title="exportPng" id="exportPng" alt="png to export" />
+			
+			<h3>Variations</h3>
+			
+        </div>
+		
+    </body>
+
+</html>
